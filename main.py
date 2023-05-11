@@ -17,5 +17,5 @@ dataset = "prompt_completion_pairs_prepared.jsonl"
 # Cria o fine_tuning
 # response = openai.FineTune.create(**fine_tune_params)
 
-# Imprime o ID do modelo treinado
+# Execuuta o processo
 subprocess.run(['openai', 'api', 'fine_tunes.create', '-t', 'prompt_completion_pairs_prepared.jsonl', '-m', 'curie'])
